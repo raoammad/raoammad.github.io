@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background:url(../images/common/background.jpg); background-attachment: fixed; background-size:cover; }
+
+#container{background: rgba(200, 54, 54, 0); width:950px; height:auto; position:sticky;}
+
+.head{width:inherit; height:80px; display:flex;}
+.head .logo{width:30%;}
+.logo .l{width:250px; height:120px;}
+
+/*nav css*/.head .nav{position: fixed; top: 0; left:280px; margin-top:-30px; height:72px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; border-bottom-style: solid; width:650px; background-color: grey; opacity:0.9;}
+ul { list-style-type:none; overflow:hidden; width:900px; font-size:20px; height:52px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; font-family:"Trebuchet MS";}
+.nav li {float: left;}
+.nav li a {display:block; color:Black; text-align:center; padding:14px 16px; text-decoration:none;}
+.nav li a:hover{ color:#FFB100;}
+.nav li .a1:visited{color:#FFB100;}
+.nav li {border-right: 1px solid red;}
+.nav li:last-child{border: none;}
+/*nav css*/
+
+.c1{}
+ h1{text-align:center; color:#FFB100;  font-size:45px; 
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; }
+.c1 table img{width:280px; height:200px;}
+
+.c1 td:hover{opacity:0.8;}
+.c1 td p{display: block; z-index:0; position:absolute; text-align:center; background-color:black; width:280px; height:25px; font-size:25px; opacity:0.8; color:#FFB100;}
+.c1 td p:hover{opacity:1;}
+
+#container .c2{width:100%; height:auto;}
+.c2 .c{display: none;}
+.c2 table{width:100%; height:200px; border:none;  text-align:center; background-color:rgba(173,173,173,1.00);}
+
+

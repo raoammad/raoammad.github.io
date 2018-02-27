@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Autoworld-Services</title>
+<link href="../../css/services.css" rel="stylesheet" type="text/css">
+<link href="../../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="../../jquery/jquery-3.2.1.js" > </script>
+</head>
+
+<body>
+
+<center><div id="container">
+
+<div class="head">
+		
+		<div class="logo"><img class="l" align="left" src="../../images/common/Logo77450V2.png"></div>
+		
+		<!--Nav Html--><div class="nav"><ul>
+  <li><a   href="../../index.html">HOME</a></li>
+  <li><a  href="inventory.html">INVENTORY</a></li>
+  <li><a class="a3" href="services.html">SERVICES</a></li>
+  <li><a href="contact us.html">CONTACT US</a></li>
+  <li><a href="aboutus.html">ABOUT</a></li>
+</ul></div><!--Nav Html-->
+
+	</div>
+	
+<div class="main">
+<h1 align="center">____________..:Services:..____________</h1>
+
+<div class="content">
+	<div class="c1"><b><input id="reg" type="button" value="Register"><input id="signin" type="button" value="SignIn"><input id="sell" type="button" value="Sell Car"><input id="finance" type="button" value="Finance" ><input id="warranty" type="button" value="Warranty"></b></div>
+	<div class="c2">
+		<script>	
+	$(document).ready(function(){
+    $("#reg").click(function(){
+        $(".signup").show(1000);
+		$(".login").hide(1000);
+		$(".sform").hide(1000);
+		$(".warranty").hide(1000);
+		$(".finance").hide(1000);
+    });
+    $("#signin").click(function(){
+        $(".signup").hide(1000);
+		$(".login").show(1000);
+		$(".sform").hide(1000);
+		$(".warranty").hide(1000);
+		$(".finance").hide(1000);
+    });
+	$("#sell").click(function(){
+        $(".signup").hide(1000);
+		$(".login").hide(1000);
+		$(".sform").show(1000);
+		$(".warranty").hide(1000);
+		$(".finance").hide(1000);
+    });
+		$("#finance").click(function(){
+        $(".signup").hide(1000);
+		$(".login").hide(1000);
+		$(".sform").hide(1000);
+		$(".finance").show(1000);
+		$(".warranty").hide(1000);
+	});		
+		
+		$("#warranty").click(function(){
+        $(".signup").hide(1000);
+		$(".login").hide(1000);
+		$(".sform").hide(1000);
+		$(".finance").hide(1000);
+		$(".warranty").show(1000);
+    });
+    
+});
+	</script>
+	
+		<div class="sform" style="display:none;">
+
+<h1>Sell Your Car</h1>
+	<form method="get">
+		<table width="450" border="0" cellpadding="5px">
+  <tbody>
+    <tr><td colspan="3">Car Information</td></tr>
+     <tr>
+      <td><label>Make*</label><br><input required="required"></td>
+      <td><label>Model*</label><br><input required="required"></td>
+	<td><label>Year*</label><br><input required="required"></td>
+    </tr>
+    <tr>
+      <td><label>Transmission</label><br><input></td>
+      <td><label>Color</label><br><input></td>
+      <td><label>Mileage</label><br><input></td>
+    </tr>
+      <tr>
+      <td colspan="3"><label>Add your car photos</label><br><i class="fa fa-plus-square fa-3x"></i></td>
+      </tr>
+      <tr><td colspan="3">Contact Information</td></tr>
+      
+      <tr>
+      <td><label>First Name</label><br><input required="required"></td>
+      <td colspan="2"><label>Last Name</label><br><input required="required"></td>
+      </tr>
+      
+       <tr>
+      <td><label>E-mail</label><br><input></td>
+      <td colspan="2"><label>Phone</label><br><input required="required"></td>
+      </tr>
+   <tr><td colspan="3"><input class="sub" type="submit" align="center"></td></tr>
+  </tbody>
+</table>
+
+	</form>
+</div>
+	   <div class="signup" style="display: none">
+<h1>Register</h1>
+	<form method="get">
+		<table border="0" cellpadding="12">
+  <tbody>
+    <tr>
+      <td><input placeholder="User Name" required="required"><i class="fa fa-user"></i></td>
+    </tr>
+    <tr>
+      <td><input placeholder="Email" required="required"><i class="fa fa-envelope"></i></td>
+    </tr>
+    <tr>
+      <td><input placeholder="Password" required="required"><i class="fa fa-unlock"></i></td>
+    </tr>
+    <tr>
+      <td><input placeholder="Confirm Password" required="required"><i class="fa fa-check-circle"></i></td>
+    </tr>
+    <tr>
+      <td><input class="sub" type="submit" align="center" value="Signup"></td>
+    </tr>
+    <tr><td><p class="p">Choosing signup means that you agree to AutoWorld services agreement,privacyand cookie statement.</p></td></tr>
+  </tbody>
+</table>
+
+
+	</form>
+</div>
+	<div class="login" style="display:none;">
+<h1>Login</h1>
+	<form method="get">
+		<table width="250" border="0" cellpadding="15">
+  <tbody>
+    <tr>
+      <td><input placeholder="User Name" required="required"><i class="fa fa-user"></i></td>
+    </tr>
+    <tr>
+      <td><input placeholder="Password" required="required"><i class="fa fa-unlock"></i></td>
+    </tr>
+    <tr><td>Forgot password?</td></tr>
+     <tr>
+      <td><input class="sub" type="submit" align="center" value="Signin" ></td> 
+   </tr>
+	  <tr><td><p class="p">Dont have account? <a id="signup"><u>Create one now!</u></a></p></td></tr>
+  </tbody>
+</table>
+
+
+	</form>
+</div>
+	<div class="finance">
+<script> 
+$(document).ready(function(){
+    $("#faysal").click(function(){
+    $(".faysal").slideToggle("slow");
+    });
+	$("#soneri").click(function(){
+    $(".soneri").slideToggle("slow");
+    });
+	$("#meezan").click(function(){
+    $(".meezan").slideToggle("slow");
+    });
+	$("#allied").click(function(){
+    $(".allied").slideToggle("slow");
+    });
+});
+</script>
+<h1>Financing Through Autoworld Affiliated Banks</h1>
+	<input id="faysal" type="button" value="Faysal Bank-Barkat Auto Finance">
+	<div class="faysal f">
+		<p>Barkat Auto finance is based on the principles of Diminishing Musharakah. This is a medium and long term financing product, where the Bank and the customer jointly purchase an asset and create joint ownership in the asset. The Bank rent out its share in the asset to the customer while the customer periodically purchases units of ownership in the asset from the Bank. After purchase of all the units, the customer becomes the sole owner of the asset.
+		<h2>Features and Benefits</h2>
+		Quick processing with less documentation<br>
+		Financing amount upto 60% of the value of the vehicle<br>
+		Flexible tenures ranging from 12 to 60 months for repayments<br>
+		Installments start after delivery of the vehicle
+		
+		<h2>Elegibility Criteria</h2>
+		
+		Citizen Ship: Pakistan<br>
+		Cities: KHI, LHR, ISL, RWL, SLA, FSD, MUL, HYD, PSH<br>
+		Income: Rs 30,000(For Salaried), Rs 40,000(For Branch Banking)<br>
+		Age Limit: For Salaried (Min 21 Years and Max 65 Years at the time maturity)<br>
+		</p>
+	</div>
+	
+	<input id="soneri" type="button" value="Soneri Bank-Car Finance">
+	<div class="soneri f" ><p>Introduction:
+Now you can become the owner of a brand new car through Soneri Car Finance Scheme. Soneri Bank Limited offers Car Finance facility up to Rs.3,000,000/-, repayable in 5 years in equal monthly installments. Option of used and reconditioned car are also available. To fulfill your need, please contact your nearest branch of Soneri Bank Limited or call 021-111-766-374 for application assistance.
+		<h2>Features and Benefits</h2>
+		Fast and hassle-free application processing<br>
+		Financing amount upto 60% of the value of the vehicle<br>
+		Zero processing fee on declined application<br>
+		Down payment is required once loan is approved<br>
+		<h2>Elegibility Criteria</h2>
+		Citizen Ship: Pakistan<br>
+		Cities: KHI, LHR, ISL, RWL, SLA, FSD, MUL, HYD, PSH<br>
+		Income: Rs 30,000(For Salaried), Rs 40,000(For Branch Banking)<br>
+		Age Limit: For Salaried (Min 21 Years and Max 65 Years at the time maturity),<br> 
+		For SEB/SEP (Min 21 Year and Max 70 Years at the time of maturity).
+		
+		</p></div>
+	
+	<input id="meezan" type="button" value="Meezan Bank-Car Ijarah">
+	<div class="meezan f"><p>Car Ijarah is Meezan Bank’s car financing product and is Pakistan’s first Interest-free car financing. It is based on the Islamic financing mode of Ijarah (leasing). This product is ideal for individuals who want to get interest-free financing for acquiring a car.
+    Car Ijarah works through a car rental agreement, under which the Bank purchases the car and rents it out to the customer for a period of 1 to 7 years, agreed at the time of the contract. Upon completion of the Ijarah period, the vehicle will be sold at a token amount or gifted to the customer.
+		<h2>Features and Benefits</h2>
+		
+		Lowest upfront payment<br>
+		Financing amount upto 60% of the value of the vehicle<br>
+		Free accidental death coverage<br>
+		Minimum security deposit as low as 15%<br>
+		<h2>Elegibility Criteria</h2>
+		Citizen Ship: Pakistan<br>
+		Permanent employees:3 months in current job with a minimum 2 years continuous employment history<br>
+		Net take home income : In excess of 2 times the monthly rental<br>
+		Spouse’s verifiable income : Clubbed to an extent of 50%
+		</p></div>
+	
+	<input id="allied" type="button" Value="Allied Bank-Car Finance">
+	<div class="allied f"><p>Ab Har Safar Shandar – with Allied Car Loan!
+	You no longer have to wait to buy your dream car because Allied Bank now offers car loan facility for its customers on low mark-up with flexible repayment options.
+		<h2>Features and Benefits</h2>
+		No hidden costs<br>
+		Financing amount upto 60% of the value of the vehicle<br>
+		Simple and easy documentation<br>
+		Flexibility to Choose the Repayment Period up to 7 years. (12 to 84 months repayment)<br>
+		<h2>Elegibility Criteria</h2>
+		Citizen Ship: Pakistan<br>
+		You are 21 to 59 years old<br>
+		Your net monthly salary is Rs.40,000/- or more<br>
+		Your length of employment with current employer is minimum 03 years
+		</p></div>
+</div>
+
+<div class="warranty">
+<script> 
+$(document).ready(function(){
+    $("#toyota").click(function(){
+    $(".toyota").slideToggle("slow");
+    });
+	$("#honda").click(function(){
+    $(".honda").slideToggle("slow");
+    });
+	$("#suzuki").click(function(){
+    $(".suzuki").slideToggle("slow");
+    });
+	$("#mitsubishi").click(function(){
+    $(".mitsubishi").slideToggle("slow");
+    });
+});
+</script>
+<h1>AutoWorld Affiliated Brands Warranty Schemes</h1>
+	<input id="toyota" type="button" value="Toyota-AutoWarranty">
+	<div class="toyota w" style="background:url(../../images/common/tw.PNG); background-size:cover;"></div>
+	
+	<input id="honda" type="button" value="Honda-AutoWarranty">
+	<div class="honda w" >
+		<img src="../../images/common/hw1.PNG" style="width:675px; height:210px;">
+		<img src="../../images/common/hw2.PNG" style="width:675px; height:350px;">
+	</div>
+	
+	<input id="suzuki" type="button" value="Suzuki-AutoWarranty">
+	<div class="suzuki w">
+	<img src="../../images/common/sw.jpg" style="width:675px; height:230px;">
+		<p>ONE OF THE BEST PERFORMING WARRANTIES IN THE BUSINESS.When you make cars and trucks this good,backing them with a great warranty is no problem.Every Suzuki comes with a 100,000-mile/7-year Powertrain warranty.
+Duration -Suzuki's powertrain limited warranty covers 100,000 miles or 7 years
+$0 Deductible - There is no deductible, so Suzuki owners never have any out-of-pocket expenses.
+For 2009 and Newer Model Years are covered by the Suzuki Fleet Limited Powertrain Warranty which begins at 36 months or 36,000 miles and extends to 60 months or 60,000 miles.
+Suzuki's New Vehicle Limited Warranty covers all components of the vehicles for 36 months or 36,000 miles.Any repairs needed to correct defects in materials will be made with no charge.The battery is covered for 24 months or 24,000 miles.Should original body sheet-metal panels develop perforation due to corrosion, they're covered for 60 months, with no limit on mileage.Tires hold a separate warranty from the tire manufacturer.</p>
+	</div>
+	
+	<input id="mitsubishi" type="button" Value="Mitsubishi-AutoWarranty">
+	<div class="mitsubishi w">
+		<img src="../../images/common/mw3.jpg" style="width:675px; height:250px;">
+		<img src="../../images/common/mw2.jpg" style="width:675px; height:270px;">
+	</div>
+</div>
+
+	</div>
+</div>	
+
+
+
+<div class="footer">
+ 
+<div class="icon"><marquee onMouseOver="this.stop();" onMouseOut="this.start();" scrollamount="7">
+   <center><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> 
+    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/?gws_rd=cr&dcr=0&ei=uj0XWqfCD4Sp6AT2-4ngCA" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+<a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></center></marquee></div>
+	
+  <div class="info">
+	<div class="a"><p class="p1">Auto World &copy;</p>
+	<p>Main Dealership<i class="fa fa-pin" aria-hidden="true"></i><br>St.no 183,Main Shahrah-e-Faisal,Karachi,Pakistan<br>Email:info@autoworld.com<br>Tel:123-456-7890<br>Fax:123-456-7890</p>
+	<p>icons by FontAwesome.com<i class="fa fa-font-awesome" aria-hidden="true"></i></p>
+	</div>
+	<div class="b"><h1>NEWS LETTER</h1>
+	<p class="p2">Keep up with our updates<br>Enter your e-mail and subscribe to our newsletter.</p>	
+	<i class="fa fa-envelope fa-1x" aria-hidden="true"></i>  <input class="e" type="email" required="required" placeholder="Type your e-mail"><input class="sub" type="submit" value="Subscribe"></div>		
+ </div>
+</div>
+	
+	</div>
+	
+
+</div></center>
+
+</body>
+</html>

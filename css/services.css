@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background:url(../images/common/background.jpg); background-attachment: fixed; background-size:cover; }
+
+#container{background: rgba(200, 54, 54, 0); width:980px; height:auto;  }
+
+.head{width:inherit; height:120px; float: left; }
+.head .logo{width:100%;}
+.logo .l{width:250px; height:120px;}
+
+ /*nav css*/.head .nav{position:fixed; top: 0; left:280px; margin-top:-30px; height:72px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; border-bottom-style: solid; width:650px; background-color: grey; opacity:0.9;}
+ul { list-style-type:none; overflow:hidden; width:900px; font-size:20px; height:52px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; font-family:"Trebuchet MS";}
+.nav li {float: left;}
+.nav li a {display:block; color:Black; text-align:center; padding:14px 16px; text-decoration:none; }
+.nav li a:hover{ color:#FFB100;}
+.nav li .a3:visited{color:#FFB100;}
+.nav li {border-right: 1px solid red;}
+.nav li:last-child{border: none;}
+/*nav css*/
+
+#container .main{width:inherit; height:800px; }
+
+h1{ height:30px; border-bottom-left-radius:15px; border-bottom-right-radius:15px; border-top-left-radius:15px;  border-top-right-radius:15px; padding:10px; color:#FFB100; font-size:40px; text-align:center; font-style:normal; font-family:"Trebuchet MS";}
+
+.content{display:flex; width:980px; height:720px; margin-top:150px; }
+.c1{width:30%; height:720px; background:rgba(200, 54, 54, 0);; background-size: cover;  border-top-left-radius:5px; border-bottom-left-radius:5px;}
+.c1 input{width:130px; height:100px; background:url(../images/common/inputback.jpg); border:none; margin:8px; border-radius:5px; font-size:18px; font-family:"Trebuchet MS"; color:#FFB100;}
+.c1 input:hover{opacity:0.8;}
+.c2{width:70%; height:720px; background:url(../images/common/contentb.jpg); border-top-right-radius:5px; border-bottom-right-radius:5px; background-size:cover; }
+
+.c2 .sform table{background:url(../../n/blurred-background-17.jpg); color:goldenrod; font-family:"Trebuchet MS"; font-size:18px; border-radius:5px;}
+	.sform h1{  color:#FFB100; font-size:24px;  font-style:normal; font-family:"Trebuchet MS";}
+	.sform table input{height:20px; border-radius:5px;}
+.sform .sub{  background-color:forestgreen; height:30px; border:none;  font-size:18px; border-radius:5px;}
+
+.signup table{ width:320px; height:500px; background-color:white; color:#FFB100; font-family:"Trebuchet MS"; font-size:18px;}
+	.signup h1{  color:#FFB100; font-size:25px;  font-style:normal; font-family:"Trebuchet MS";}
+	.signup table input{width:260px; height:30px; border: none; border-bottom-style: solid; border-width: thin; border-color: gray;}
+	.signup .sub{  background-color:forestgreen; height:30px; border:none;  font-size:18px; border-radius:5px;}
+.signup .p{font-size: 12px; color:darkblue;}
+
+.login table{width:320px; height:400px; background-color:white; color:#FFB100; font-family:"Trebuchet MS"; font-size:18px;}
+	.login h1{  color:#FFB100; font-size:25px;  font-style:normal; font-family:"Trebuchet MS";}
+	.login table input{width:260px; height:30px; border: none; border-bottom-style: solid; border-width: thin; border-color: gray;}
+	.login table input:focus{ height:30px; border:none; border-bottom-style:ridge; border-width: thin; border-color: gray;}
+	.login .sub{  background-color:forestgreen; height:30px; border:none;  font-size:18px; border-radius:5px;}
+	.login .p{font-size: 15px; color:darkblue;}
+
+.c2 .finance{width:680px; height:700px; display: none; overflow: hidden; }
+	.finance h1{color:#FFB100; font-size:25px;  font-style:normal; font-family:"Trebuchet MS";}
+	.finance input{width:50%; height:28px; font-size:20px; background-color:#FFB100; border-radius:5px; font-family:"Trebuchet MS"; border:none; border-bottom-style: solid;}
+	.finance input:hover{background-color:red;}
+	.finance .f{width:675px; height:700px; display:none; background-color:transparent; border-radius: 5px; text-align:left; color:white; }
+	.finance p{font-size:20px;  font-style:normal; font-family:"Trebuchet MS"; }
+
+.c2 .warranty{width:680px; height:700px;  overflow: hidden; display:none;}
+    .warranty h1{color:#FFB100; font-size:25px;  font-style:normal; font-family:"Trebuchet MS";}
+	.warranty input{width:50%; height:28px; font-size:20px; background-color:#FFB100; border-radius:5px; font-family:"Trebuchet MS"; border:none; border-bottom-style: solid;}
+	.warranty input:hover{background-color:red;}
+	.warranty .w{width:675px; height:700px; display:none;  border-radius: 5px; text-align:left; color:white;}
+	.warranty p{font-size:18px; font-family:"Trebuchet MS"; }
+
+.footer{width:980px; height:200px; margin-top:15px;  border-top-left-radius:10px; border-top-right-radius:10px;  float:right;}
+	.footer .icon{width:inherit; height:35px; background-color:rgba(200, 54, 54, 0);}
+	.footer .icon a{padding-left:50px; padding-right:50px; color:gray;}
+	.footer .info{display:flex; background-size:cover; background:url(../images/common/fback.jpg); border-top-left-radius:10px; border-top-right-radius:10px;}
+	.footer .info .a{width:50%; text-align-last: left; } 
+	.footer .info .a .p1{color:goldenrod; font-family:"Trebuchet MS"; font-size:30px;   margin-left:20px;}
+.footer .info p{color:black; font-size:20px; margin-left: 20px;}
+    .footer .info .b h1{color:#FFB100; font-family:"Trebuchet MS"; font-size:22px; margin-top:60px;}
+	
+	.footer .info .b {width:50%;}
+	.footer .info .b .p2{color:black; font-family:"Trebuchet MS"; font-size:23px;}
+	.footer .info .b .e{width:200px; height:25px;}
+	.footer .info .b .sub{ font-style:oblique; background-color:#D20022; height:31px; border:none; border-bottom-left-radius:0px; border-bottom-right-radius:8px; font-size:18px; border-top-left-radius:0px; border-top-right-radius:8px;}
+	.footer .info .b .sub:hover{background-color:#FFB100;}
+	.footer .info .b .fa-envelope{ height:25px; width:20px;}

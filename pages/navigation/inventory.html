@@ -1,0 +1,1893 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Autoworld Inventory</title>
+<link href="../../css/inventory.css" rel="stylesheet" type="text/css">
+<link href="../../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="../../jquery/jquery-3.2.1.js" > </script>
+
+</head>
+
+<body>
+<center><div id="container">
+
+	<div class="head">
+		
+		<div class="logo"><img class="l" align="left" src="../../images/common/Logo77450V2.png"></div>
+		
+		<!--Nav Html--><div class="nav"><ul>
+  <li><a  href="../../index.html">HOME</a></li>
+  <li><a class="a2" href="inventory.html">INVENTORY</a></li>
+  <li><a href="services.html">SERVICES</a></li>
+  <li><a href="contact us.html">CONTACT US</a></li>
+  <li><a href="aboutus.html">ABOUT</a></li>
+</ul></div><!--Nav Html-->
+
+</div>
+
+  <div class="main">
+<h1 align="center">____________..:Inventory:..____________</h1>
+  <div class="c1">
+  	<div class="menu">
+  		<input type="search" placeholder="Search.."><button class="search" type="submit"><i class="fa fa-search"></i></button><br><br><br>
+  		<div class="toggle"><button id="new" class="new"><b>New</b></button><button id="used" class="used"><b>Used</b></button></div>
+  	<br>
+  	<div class="brand">
+  		<h2>Brand</h2><br>
+  		<form><table width="280px" border="0">
+  <tbody>
+    <tr>
+      <td><input id="B" class="check" type="radio" name="same"><b>BMW</b></td>
+      <td><input id="M" class="check" type="radio"  name="same"><b>MERCEDES</b></td>
+    </tr>
+    <tr>
+      <td><input id="P" class="check" type="radio"  name="same"><b>PORSCHE</b></td>
+      <td><input id="A" class="check" type="radio"  name="same"><b>AUDI</b></td>
+    </tr>
+    <tr>
+      <td><input id="T" class="check" type="radio"  name="same"><b>TOYOTA</b></td>
+      <td><input id="H" class="check" type="radio"  name="same"><b>HONDA</b></td>
+    </tr>
+    <tr><td colspan="2"><h2 align="center" class="dealer">Dealership</h2></td></tr>
+     <tr>
+      <td><input id="D1" class="check" type="radio" name="same"><b>DEALERSHIP1</b></td>
+      <td><input id="D2" class="check" type="radio"  name="same"><b>DEALERSHIP2</b></td>
+    </tr>
+    <tr>
+      <td><input id="D3"  class="check" type="radio"  name="same"><b>DEALERSHIP3</b></td>
+      <td><input id="D4" class="check" type="radio"  name="same"><b>DEALERSHIP4</b></td>
+    </tr>
+    
+    <tr><td colspan="2"><h2 align="center" class="dealer">Prices</h2></td></tr>
+     <tr>
+      <td><input id="P1" class="check" type="radio" name="same"><b>8000$-20000$</b></td>
+      <td><input id="P2" class="check" type="radio"  name="same"><b>20000$-30000$</b></td>
+    </tr>
+    <tr>
+      <td><input id="P3" class="check" type="radio"  name="same"><b>30000$-60000$</b></td>
+      <td><input id="P4" class="check" type="radio"  name="same"><b>Exclusives</b></td>
+    </tr>
+   
+    <tr><td colspan="2"><input id="reset" type="reset"  class="reset"></td></tr>
+   
+  </tbody>
+</table></form>
+ 	</div>
+  
+  	
+  	</div>
+  	
+  	<div class="content">
+  	<script>	
+	$(document).ready(function(){
+    
+		$("#new").click(function(){
+        $("#n").show(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+    
+		$("#used").click(function(){
+         $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").show(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#B").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").show(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#M").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").show(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#P").click(function(){
+         $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").show(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#A").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").show(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#T").click(function(){
+         $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").show(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#H").click(function(){
+         $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").show(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#D1").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").show(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#D2").click(function(){
+         $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").show(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#D3").click(function(){
+         $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").show(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#D4").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").show(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#P1").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").show(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#P2").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").show(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#P3").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").show(1000);
+		$("#p4").hide(1000);
+    });
+		
+		$("#P4").click(function(){
+        $("#n").hide(1000);
+		$("#all").hide(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").show(1000);
+    });
+		
+		$("#reset").click(function(){
+        $("#n").hide(1000);
+		$("#all").show(1000);
+		$("#u").hide(1000);
+		$("#b").hide(1000);
+		$("#m").hide(1000);
+		$("#p").hide(1000);
+		$("#a").hide(1000);
+		$("#t").hide(1000);
+		$("#h").hide(1000);
+		$("#d1").hide(1000);
+		$("#d2").hide(1000);
+		$("#d3").hide(1000);
+		$("#d4").hide(1000);
+		$("#p1").hide(1000);
+		$("#p2").hide(1000);
+		$("#p3").hide(1000);
+		$("#p4").hide(1000);
+    });
+		
+});
+</script>
+  	
+<div id="all">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad1.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Civic</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:28000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad2.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Aurion</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:10000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad3.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Accord</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:15000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad4.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:A5</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:42000$</td>
+<td>Status:used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad5.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Corolla</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:25000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad6.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:R8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:100000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad7.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Bmw</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:I8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:50000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad8.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:G-class</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:78000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad9.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:AMG-Gt</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:180000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad10.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:911-Turbo</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:60000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad11.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:918Spyder</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:150000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad12.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:BMW</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:E36</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:16000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+
+<div id="n" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad1.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Civic</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:28000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad5.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Corolla</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:25000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad6.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:R8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:100000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad7.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Bmw</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:I8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:50000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad9.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:AMG-Gt</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:180000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad11.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:918-Spyder</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:150000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+
+<div id="u" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad2.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Aurion</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:10000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad3.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Accord</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:15000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+ <div class="car">
+<div class="img" style="background:url(../../images/adds/ad3.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Accord</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:15000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+  <div class="car">
+<div class="img" style="background:url(../../images/adds/ad8.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:G-class</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:78000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+   <div class="car">
+<div class="img" style="background:url(../../images/adds/ad10.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:911-Turbo</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:60000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+    <div class="car">
+<div class="img" style="background:url(../../images/adds/ad12.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:BMW</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:E36</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:16000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+      </div>
+	
+<div id="b" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad7.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Bmw</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:I8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:50000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="#" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ <div class="car">
+<div class="img" style="background:url(../../images/adds/ad12.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:BMW</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:E36</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:16000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="#" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+ 	
+<div id="m" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad8.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:G-class</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:78000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad9.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:AMG-Gt</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:180000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+  </div>
+ 	
+<div id="p" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad10.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:911-Turbo</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:60000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ <div class="car">
+<div class="img" style="background:url(../../images/adds/ad11.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:918-Spyder</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:150000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+	
+<div id="a" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad4.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:A5</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:42000$</td>
+<td>Status:used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+ <div class="car">
+<div class="img" style="background:url(../../images/adds/ad6.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:R8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:100000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+	
+<div id="t" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad2.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Aurion</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:10000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ <div class="car">
+<div class="img" style="background:url(../../images/adds/ad5.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Corolla</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:25000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+ 	
+<div id="h" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad1.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Civic</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:28000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad3.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Accord</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:15000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+  </div>
+	
+	
+<div id="d1" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad1.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Civic</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:28000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad5.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Corolla</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:25000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ <div class="car">
+<div class="img" style="background:url(../../images/adds/ad8.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:G-class</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:78000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+	
+<div id="d2" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad6.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:R8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:100000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad7.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Bmw</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:I8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:50000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad11.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:918-Spyder</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:150000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div> 
+ </div>
+	
+<div id="d3" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad4.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:A5</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:42000$</td>
+<td>Status:used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad9.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:AMG-Gt</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:180000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad12.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:BMW</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:E36</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:16000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div> 
+  </div>
+	
+<div id="d4" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad2.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Aurion</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:10000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad3.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Accord</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:15000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad10.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:911-Turbo</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:60000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+  </div>
+ 	
+ 	
+ <div id="p1" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad2.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Aurion</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:10000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad3.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Accord</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:15000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad12.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:BMW</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:E36</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:16000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+ </div>
+	
+<div id="p2" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad1.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Civic</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:28000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad5.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:Corolla</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:25000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+
+</div>
+	
+<div id="p3" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad4.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:A5</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:42000$</td>
+<td>Status:used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad7.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Bmw</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:I8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:50000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad10.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:911-Turbo</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:60000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div> 
+</div>
+	
+<div id="p4" style="display:none;">
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad6.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Audi</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:R8</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:100000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad8.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer1</td>
+</tr>
+
+<tr>
+	<td>Model:G-class</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:78000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div> 
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad9.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:MERC</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:AMG-Gt</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:180000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+<div class="car">
+<div class="img" style="background:url(../../images/adds/ad11.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="5px" >
+
+<tr>
+<td>Company:Porsche</td>
+<td>Location:Dealer2</td>
+</tr>
+
+<tr>
+	<td>Model:918-Spyder</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:150000$</td>
+<td>Status:New</td>
+	</tr>
+	</table>
+	<a href="contact us.html" align="left"><button class="contact">Contact</button></a>
+</div>
+</div>
+</div>
+ 	
+ 	</div>
+  	
+  </div>
+  
+<div class="footer">
+ 
+<div class="icon"><marquee onMouseOver="this.stop();" onMouseOut="this.start();" scrollamount="7">
+   <center><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> 
+    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/?gws_rd=cr&dcr=0&ei=uj0XWqfCD4Sp6AT2-4ngCA" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+<a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></center></marquee></div>
+	
+  <div class="info">
+	<div class="a"><p class="p1">Auto World &copy;</p>
+	<p>Main Dealership<i class="fa fa-pin" aria-hidden="true"></i><br>St.no 183,Main Shahrah-e-Faisal,Karachi,Pakistan<br>Email:info@autoworld.com<br>Tel:123-456-7890<br>Fax:123-456-7890</p>
+	<p>icons by FontAwesome.com<i class="fa fa-font-awesome" aria-hidden="true"></i></p>
+	</div>
+	<div class="b"><h1>NEWS LETTER</h1>
+	<p class="p2">Keep up with our updates<br>Enter your e-mail and subscribe to our newsletter.</p>	
+	<i class="fa fa-envelope fa-1x" aria-hidden="true"></i>  <input class="e" type="email" required="required" placeholder="Type your e-mail"><input class="sub" type="submit" value="Subscribe"></div>		
+ </div>
+</div>	
+  
+  </div>
+	
+	
+	
+</div></center>
+</body>
+</html>

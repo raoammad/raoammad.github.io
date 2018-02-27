@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Autoworld</title>
+<link href="css/home.css" rel="stylesheet" type="text/css">
+<script src="jquery/jquery-3.2.1.js"> </script>
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="loader">
+<script><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="gooey">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+    </filter>
+  </defs>
+</svg>
+	</script>
+<div class="blob blob-0"></div>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+<div class="blob blob-4"></div>
+	<div class="blob blob-5"></div>
+</div>
+<script>
+	$(document).ready(function() {
+   window.setTimeout("fadeMyDiv();", 2000); 
+ })
+function fadeMyDiv() {
+   $("#loader").fadeOut('slow');
+	
+}
+	</script>
+
+<center><div id="container">
+
+<div class="head">
+		
+		<div class="logo"><img class="l" align="left" src="images/common/Logo77450V2.png"></div>
+		
+		<!--Nav Html--><div class="nav"><ul>
+  <li><a class="a1"  href="">HOME</a></li>
+  <li><a  href="pages/navigation/inventory.html">INVENTORY</a></li>
+  <li><a href="pages/navigation/services.html">SERVICES</a></li>
+  <li><a href="pages/navigation/contact us.html">CONTACT US</a></li>
+  <li><a href="pages/navigation/aboutus.html">ABOUT</a></li>
+</ul></div><!--Nav Html-->
+
+	</div>
+	
+	<div class="main">
+<div class="c1"><!--slider-->
+	
+	<div class="w3-content w3-section" style="max-width:950px;">
+  <a href="https://www.press.bmwgroup.com/global/article/detail/T0257972EN/the-next-100-years:-bmw-group-vision-vehicles-bring-future-mobility-to-life-today?language=en" target="_blank"><img class="mySlides" src="images/slider/n1.jpg"></a>
+  
+  <a href="http://auto.ferrari.com/en_EN/news-events/news/ferrari-j50-takes-top-honours-red-dot-award-product-design-2017/" target="_blank"><img class="mySlides" src="images/slider/n2.jpg"></a>
+  
+  <a href="http://www.autoguide.com/auto-news/2017/03/a-dodge-demon-teaser-porsche-mission-e-details-and-new-toyota-supra-photos-weekly-news-roundup-video.html" target="_blank"><img class="mySlides" src="images/slider/n4.jpg"></a>
+  
+  <a href="http://www.autoline.tv/journal/?p=52781" target="_blank"><img class="mySlides" src="images/slider/n5.jpg"></a>
+  
+  <a href="http://www.worldautoevolution.com/kia-sportage-vs-hyundai-tucson-whats-difference/" target="_blank"><img class="mySlides" src="images/slider/n6.jpg"></a>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display ="none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);
+}
+	
+</script>
+</div><!--slider-->		
+		<!--content2--><div class="c2">
+			<h1>.:Automotive Catalog:._____________________________</h1>
+			<table border="0px" cellpadding="15px">
+<tr>
+  <td><a href="pages/catalog/suzuki.html"><img src="images/catalog/suzuki.png" width="90px" height="90px" style="margin-left:38px;"></a></td>
+  <td><a href="pages/catalog/toyota.html"><img src="images/catalog/toyota.png" width="150px" height="140px"></a></td>
+  <td><a href="pages/catalog/honda.html"><img src="images/catalog/honda.png" width="140px" height="150px" style="margin-left:35px;"></a></td>
+  <td><a href="pages/catalog/mitsubishi.html"><img src="images/catalog/11_d_mitsubishi_178_brief.jpg" width="120px" height="110px" style="margin-left:65px;"></a></td>
+</tr>
+<tr>
+<td><a href="pages/catalog/bmw.html"><img src="images/catalog/bmw.png" width="100px" height="100px" style="margin-left:35px;"></a></td>
+<td><a href="pages/catalog/lexus.html"><img src="images/catalog/lexus.png" width="130px" height="100px"></a></td>
+<td><a href="pages/catalog/audi.html"><img src="images/catalog/audi.png" width="130px" height="100px" style="margin-left:35px;"></a></td>
+<td><a href="pages/catalog/mercedes.html"><img src="images/catalog/Mercedes-Benz-logo-.png" width="190px" height="110px" style="margin-left:30px;"></a></td>
+</tr>
+<tr>
+<td><a href="pages/catalog/mazda.html"><img src="images/catalog/mazda.png" width="190px" height="110px"></a></td>
+<td><a href="pages/catalog/hyundai.html"><img src="images/catalog/hyundai.png" width="140px" height="130px"></a></td>
+<td><a href="pages/catalog/nissan.html"><img src="images/catalog/nissan.png" width="160px" height="120px" style="margin-left:25px;"></a></td>
+<td><a href="pages/catalog/porsche.html"><img src="images/catalog/porsche.png" width="250px" height="130px" style="padding-right:100px;"></a></td>
+</tr>
+</table>
+		</div><!--content2-->
+	
+	<div class="c3">
+		<h1>________________________________.:Hot On The Lot:.</h1>
+	  <div class="car">
+<div class="img" style="background:url(images/adds/ad2.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="3px" >
+
+<tr>
+<td>Company:Toyota</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Aurion</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:10000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="pages/navigation/inventory.html" align="center"><button class="contact">More</button></a>
+	<a href="pages/navigation/contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+      <div class="car">
+<div class="img" style="background:url(images/adds/ad3.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="3px" >
+
+<tr>
+<td>Company:Honda</td>
+<td>Location:Dealer4</td>
+</tr>
+
+<tr>
+	<td>Model:Accord</td>
+	<td>Trans:Auto</td>
+</tr>
+
+<tr>
+<td>Price:15000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="pages/navigation/inventory.html" align="center"><button class="contact">More</button></a>
+	<a href="pages/navigation/contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+      <div class="car">
+<div class="img" style="background:url(images/adds/ad12.jpg); background-size:cover;"></div>
+<div class="info">
+<table align="center" cellpadding="3px" >
+
+<tr>
+<td>Company:BMW</td>
+<td>Location:Dealer3</td>
+</tr>
+
+<tr>
+	<td>Model:E36</td>
+	<td>Trans:Manual</td>
+</tr>
+
+<tr>
+<td>Price:16000$</td>
+<td>Status:Used</td>
+	</tr>
+	</table>
+	<a href="pages/navigation/inventory.html" align="center"><button class="contact">More</button></a>
+	<a href="pages/navigation/contact us.html" align="center"><button class="contact">Contact</button></a>
+</div>
+</div>
+	</div>
+	
+	<div class="footer">
+ 
+<div class="icon"><marquee onMouseOver="this.stop();" onMouseOut="this.start();" scrollamount="7">
+   <center><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> 
+    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/?gws_rd=cr&dcr=0&ei=uj0XWqfCD4Sp6AT2-4ngCA" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+<a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></center></marquee></div>
+	
+  <div class="info">
+	<div class="a"><p class="p1">Auto World &copy;</p>
+	<p>Main Dealership<i class="fa fa-pin" aria-hidden="true"></i><br>St.no 183,Main Shahrah-e-Faisal,Karachi,Pakistan<br>Email:info@autoworld.com<br>Tel:123-456-7890<br>Fax:123-456-7890</p>
+	<p>icons by FontAwesome.com<i class="fa fa-font-awesome" aria-hidden="true"></i></p>
+	</div>
+	<div class="b"><h1>NEWS LETTER</h1>
+	<p class="p2">Keep up with our updates<br>Enter your e-mail and subscribe to our newsletter.</p>	
+	<i class="fa fa-envelope fa-1x" aria-hidden="true"></i>  <input class="e" type="email" required="required" placeholder="Type your e-mail"><input class="sub" type="submit" value="Subscribe"></div>		
+ </div>
+</div>
+	
+	</div>
+		
+</div></center>
+</body>
+</html>

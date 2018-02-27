@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Autoworld-Contact us</title>
+<link href="../../css/contact.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body onload="initialize()">
+<center><div id="container">
+
+<div class="head">
+		
+		<div class="logo"><img class="l" align="left" src="../../images/common/Logo77450V2.png"></div>
+		
+		<!--Nav Html--><div class="nav"><ul>
+  <li><a   href="../../index.html">HOME</a></li>
+  <li><a  href="inventory.html">INVENTORY</a></li>
+  <li><a href="services.html">SERVICES</a></li>
+  <li><a class="a4" href="contact us.html">CONTACT US</a></li>
+  <li><a href="aboutus.html">ABOUT</a></li>
+</ul></div><!--Nav Html-->
+</div>
+
+<div class="main">
+<h1 align="center">____________..:Contact Us:..____________</h1>
+<div class="content">
+<div class="c1"><h2>Auto World</h2>
+
+<p>Main Dealership<i class="fa fa-map-marker"></i><br>
+st.no183,main Shahrah-e-Faisal Karachi Pakistan<br>
+Email:info@autoworld.com<br>
+Tel:123456789<br>
+	Fax:123-456-789<br></p>
+</div>
+<div class="c2">
+	<input type="text" placeholder="Name"><br>
+	<input type="email" placeholder="Email"><br>
+	<input type="text" placeholder="Subject"><br>
+	<input class="message" type="text" placeholder="Message">
+	<input class="send" type="button" value="Send">
+</div>	
+</div>
+<div id="map-canvas" style="width: 100%; height:300px;">
+	<script>
+function initialize()
+{
+	var mapCanvas = document.getElementById('map-canvas');
+	var mapOptions = {
+		center: new google.maps.LatLng(25.0700, 67.2848),
+		zoom:15,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+	new google.maps.Map(mapCanvas, mapOptions);
+	
+	}
+</script>
+</div>
+</div>
+<div class="footer">
+ 
+<div class="icon"><marquee onMouseOver="this.stop();" onMouseOut="this.start();" scrollamount="7">
+   <center><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a> 
+    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.google.com.pk/?gws_rd=cr&dcr=0&ei=uj0XWqfCD4Sp6AT2-4ngCA" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+<a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></center></marquee></div>
+	
+  <div class="info">
+	<div class="a"><p class="p1">Auto World &copy;</p>
+	<p>Main Dealership<i class="fa fa-pin" aria-hidden="true"></i><br>St.no 183,Main Shahrah-e-Faisal,Karachi,Pakistan<br>Email:info@autoworld.com<br>Tel:123-456-7890<br>Fax:123-456-7890</p>
+	<p>icons by FontAwesome.com<i class="fa fa-font-awesome" aria-hidden="true"></i></p>
+	</div>
+	<div class="b"><h1>NEWS LETTER</h1>
+	<p class="p2">Keep up with our updates<br>Enter your e-mail and subscribe to our newsletter.</p>	
+	<i class="fa fa-envelope fa-1x" aria-hidden="true"></i>  <input class="e" type="email" required="required" placeholder="Type your e-mail"><input class="sub" type="submit" value="Subscribe"></div>		
+ </div>
+</div>
+	</div></center>
+</body>
+</html>

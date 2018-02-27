@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background:url(../images/common/background.jpg); background-attachment: fixed; background-size:cover; }
+
+#container{background: rgba(200, 54, 54, 0); width:950px; height:auto;}
+
+.head{width:inherit; height:120px; float:left;}
+.head .logo{width:100%;}
+.logo .l{width:250px; height:120px;}
+
+ /*nav css*/.head .nav{position:fixed; top: 0; left:280px; margin-top:-30px; height:72px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; border-bottom-style: solid; width:650px; background-color: grey; opacity:0.9;}
+ul { list-style-type:none; overflow:hidden; width:900px; font-size:20px; height:52px; border-bottom-left-radius:20px; border-bottom-right-radius:20px; font-family:"Trebuchet MS";}
+.nav li {float: left;}
+.nav li a {display:block; color:Black; text-align:center; padding:14px 16px; text-decoration:none;}
+.nav li a:hover{ color:#FFB100;}
+.nav li .a4:visited{color:#FFB100;}
+.nav li {border-right: 1px solid red;}
+.nav li:last-child{border: none;}
+/*nav css*/
+
+h1{ height:30px; border-bottom-left-radius:15px; border-bottom-right-radius:15px; border-top-left-radius:15px;  border-top-right-radius:15px; padding:10px; color:#FFB100; font-size:40px; text-align:center; font-style:normal; font-family:"Trebuchet MS"; }
+
+ .content{width:100%; height:265px; display: flex; margin-top:120px; }
+.content .c1{width:30%; height:250px; color: white; text-align: left;}
+.c1 h2{ color:#FFB100; font-size:30px; font-style:normal; font-family:"Trebuchet MS";}
+.c1 p{font-size:20px; font-style:normal; font-family:"Trebuchet MS";}
+
+.content .c2{width:70%; height:245px; margin-top:22px;}
+.c2 input{width:100%; height:30px; background-color: gray; margin-top:5px; opacity:0.9; color:white; border:none; font-size:18px; font-style:normal; font-family:"Trebuchet MS"; border-radius:5px;}
+.c2 .message{height:80px;}
+.c2 .send{width:80px; height:32px; background-color:#FFB100; font-family:"Trebuchet MS"; border-radius:5px; color:black; border:none;}
+.c2 .send:hover{background-color:red;}
+.c2 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white;
+	opacity: 1;}
+
+
+#container .footer{width:100%; height:200px; margin-top:10px;  border-top-left-radius:10px; border-top-right-radius:10px;}
+	.footer .icon{width:inherit; height:35px; background-color:rgba(200, 54, 54, 0);}
+	.footer .icon a{padding-left:50px; padding-right:50px; color:gray;}
+	.footer .info{display:flex; background:url(../images/common/fback.jpg); border-top-left-radius:10px; border-top-right-radius:10px;}
+	.footer .info .a{width:50%; text-align-last: left; } 
+	.footer .info .a .p1{color:goldenrod; font-family:"Trebuchet MS"; font-size:30px;   margin-left:20px;}
+.footer .info p{color:black; font-size:20px; margin-left: 20px;}
+    .footer .info .b h1{color:#FFB100; font-family:"Trebuchet MS"; font-size:22px; margin-top:60px;}
+	
+	.footer .info .b {width:50%;}
+	.footer .info .b .p2{color:black; font-family:"Trebuchet MS"; font-size:23px;}
+	.footer .info .b .e{width:200px; height:25px;}
+	.footer .info .b .sub{ font-style:oblique; background-color:#D20022; height:31px; border:none; border-bottom-left-radius:0px; border-bottom-right-radius:8px; font-size:18px; border-top-left-radius:0px; border-top-right-radius:8px;}
+	.footer .info .b .sub:hover{background-color:#FFB100;}
+	.footer .info .b .fa-envelope{ height:25px; width:20px;}
